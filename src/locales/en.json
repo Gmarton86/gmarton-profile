@@ -1,4 +1,8 @@
 {
   "HEADER": "ZURVI.sk",
-  "SUB_HEADER": "Welcome to my page! I am Erik Zurvalec. I am software engineer and I create web applications since 2022."
+  "SUB_HEADER": "Welcome to my page! I am Erik Zurvalec. I am software engineer and I create web applications since 2022.",
+  "LANGUAGES": {
+    "EN": "English",
+    "SK": "Slovak"
+  }
 }
