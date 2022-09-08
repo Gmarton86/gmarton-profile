@@ -1,0 +1,26 @@
+.header {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #bdaaef, #965cd0);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 0;
+}
+
+.subheader {
+  font-size: 18px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #bdaaef, #965cd0);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-top: 0;
+}
+
+.header-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
