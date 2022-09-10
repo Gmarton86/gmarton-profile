@@ -1,0 +1,19 @@
+.contact-container_background {
+  background-color: #0d1a30;
+  color: white;
+  padding: 32px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

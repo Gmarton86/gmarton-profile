@@ -9,5 +9,9 @@
     "CONTACT": "Kontakt",
     "PROJECTS": "Projekty",
     "SKILLS": "Skúsenosti"
+  },
+  "CONTACT": {
+    "PHONE": "Telefónne číslo",
+    "COUNTRY": "Slovensko"
   }
 }

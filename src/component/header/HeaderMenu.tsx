@@ -6,7 +6,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 import { useTranslation } from "react-i18next";
 import { Button } from "@mui/material";
 
-const HeaderMenu = () => {
+const HeaderMenu = (props: any) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const { t, i18n } = useTranslation();
@@ -30,6 +30,10 @@ const HeaderMenu = () => {
     handleClose();
   };
 
+  const executeScroll = (ref: any) => {
+    if (ref) ref.current.scrollIntoView();
+  };
+
   return (
     <div className="container">
       <Button variant="text" className="header-menu-font">
@@ -38,11 +42,17 @@ const HeaderMenu = () => {
       <Button variant="text" className="header-menu-font">
         {t("HEADER_MENU.SKILLS")}
       </Button>
-      <Button variant="text" className="header-menu-font">
+      <Button
+        variant="text"
+        className="header-menu-font"
+        onClick={() => {
+          executeScroll(props.contactRef);
+        }}
+      >
         {t("HEADER_MENU.CONTACT")}
       </Button>
       <IconButton
-        style={{ color: "white" }}
+        className="IconButton"
         aria-label="more"
         id="long-button"
         aria-controls={open ? "long-menu" : undefined}

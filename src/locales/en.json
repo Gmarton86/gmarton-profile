@@ -9,5 +9,9 @@
     "CONTACT": "Contact",
     "PROJECTS": "Projects",
     "SKILLS": "Skills"
+  },
+  "CONTACT": {
+    "PHONE": "Phone",
+    "COUNTRY": "Slovakia"
   }
 }
