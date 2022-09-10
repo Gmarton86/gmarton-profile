@@ -4,6 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import LanguageIcon from "@mui/icons-material/Language";
 import { useTranslation } from "react-i18next";
+import { Button } from "@mui/material";
 
 const HeaderMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -31,6 +32,15 @@ const HeaderMenu = () => {
 
   return (
     <div className="container">
+      <Button variant="text" className="header-menu-font">
+        {t("HEADER_MENU.PROJECTS")}
+      </Button>
+      <Button variant="text" className="header-menu-font">
+        {t("HEADER_MENU.SKILLS")}
+      </Button>
+      <Button variant="text" className="header-menu-font">
+        {t("HEADER_MENU.CONTACT")}
+      </Button>
       <IconButton
         style={{ color: "white" }}
         aria-label="more"

@@ -4,5 +4,10 @@
   "LANGUAGES": {
     "EN": "Anglický",
     "SK": "Slovenský"
+  },
+  "HEADER_MENU": {
+    "CONTACT": "Kontakt",
+    "PROJECTS": "Projekty",
+    "SKILLS": "Skúsenosti"
   }
 }
