@@ -1,4 +1,39 @@
 .skills-container {
-    background-color: #091120;
-    color: white;
+  background-color: #091120;
+  color: white;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.skills-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+.label {
+  font-weight: bold;
+  font-size: large;
+  padding-right: 32px;
+}
+
+#resp-table {
+  width: 100%;
+  display: table;
+}
+
+#resp-table-body {
+  display: table-row-group;
+}
+
+.resp-table-row {
+  display: table-row;
+  height: 64px;
+}
+
+.table-body-cell {
+  display: table-cell;
 }

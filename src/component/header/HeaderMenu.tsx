@@ -39,7 +39,13 @@ const HeaderMenu = (props: any) => {
       <Button variant="text" className="header-menu-font">
         {t("HEADER_MENU.PROJECTS")}
       </Button>
-      <Button variant="text" className="header-menu-font">
+      <Button
+        variant="text"
+        className="header-menu-font"
+        onClick={() => {
+          executeScroll(props.skillsRef);
+        }}
+      >
         {t("HEADER_MENU.SKILLS")}
       </Button>
       <Button
