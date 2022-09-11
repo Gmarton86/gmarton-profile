@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import Contact from "../../component/contact/Contact";
 import HeaderMenu from "../../component/header/HeaderMenu";
+import Skills from "../../component/skills/Skills";
 
 const LandingPage = () => {
   const { t } = useTranslation();
@@ -19,6 +20,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <Skills/>
       <Contact contactRef={contactRef} />
     </div>
   );
