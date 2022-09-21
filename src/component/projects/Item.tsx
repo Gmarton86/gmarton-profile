@@ -8,8 +8,16 @@ interface IItemProps {
 
 const Item: React.FC<IItemProps> = ({ project }) => {
   const { t } = useTranslation();
+
   return (
-    <div className="item-container grow">
+    <div
+      className="item-container grow"
+      style={{
+        backgroundImage: `url(${
+          process.env.REACT_APP_PUBLIC_URL + project.background_image
+        }`,
+      }}
+    >
       <h2>{t("PROJECTS." + project.title)}</h2>
       <div>
         {project.tags.map((tag: any, index) => (
