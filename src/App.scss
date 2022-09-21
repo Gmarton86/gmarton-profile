@@ -5,6 +5,8 @@
 @import "./component/header/header-menu";
 @import "./component/contact/contact";
 @import "./component/skills/skills";
+@import "./component/projects/projects";
+@import "./component/projects/item";
 
 .background-space {
   background-image: url("./assets/space.gif");
@@ -16,4 +18,13 @@
 
 .IconButton {
   color: white !important;
+}
+
+.wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: xx-large;
 }

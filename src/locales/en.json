@@ -14,5 +14,10 @@
     "PHONE": "Phone",
     "COUNTRY": "Slovakia"
   },
-  "JOBS": "JOBS"
+  "JOBS": "JOBS",
+  "PROJECTS_TITLE": "My projects",
+  "PROJECTS": {
+    "PUBS_TITLE": "IBM Publications Center",
+    "PUBS_DESCRIPTION": "IBM Publications Center provides documents of IBM products and services. The application provides you searching and downloading features."
+  }
 }

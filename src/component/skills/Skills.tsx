@@ -5,7 +5,7 @@ const Skills = (props: any) => {
   const { t } = useTranslation();
   return (
     <section className="skills-container" ref={props.skillsRef}>
-      <div className="skills-wrapper">
+      <div className="wrapper">
         <h1>{t("HEADER_MENU.SKILLS")}</h1>
         <div id="resp-table">
           <div id="resp-table-body">
