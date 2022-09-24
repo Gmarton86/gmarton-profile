@@ -25,7 +25,7 @@ const Projects = () => {
           <h1>{t("PROJECTS_TITLE")}</h1>
         </div>
       </div>
-      <div>
+      <div className="items-container">
         {projects.map((project) => (
           <Item project={project} key={project.id}/>
         ))}

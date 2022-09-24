@@ -6,3 +6,11 @@
 .projects_header-container {
   padding: 32px;
 }
+
+.items-container {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(320px,auto) );
+  grid-template-rows: repeat( auto-fit, minmax(180px, auto) );
+  column-gap: 10px;
+  row-gap: 10px;
+}
