@@ -4,9 +4,10 @@ import { IProjectItem } from "./Projects";
 
 interface IItemProps {
   project: IProjectItem;
+  setProject: Function;
 }
 
-const ProjectTile: React.FC<IItemProps> = ({ project }) => {
+const ProjectTile: React.FC<IItemProps> = ({ project, setProject }) => {
   const { t } = useTranslation();
 
   return (
@@ -17,6 +18,12 @@ const ProjectTile: React.FC<IItemProps> = ({ project }) => {
           "linear-gradient(to bottom, rgba(35,37,38, 0.42), rgba(65,67,69, 0.52))," +
           `url(${process.env.REACT_APP_PUBLIC_URL + project.background_image}`,
       }}
+      onClick={() =>
+        setProject((prev: any) => {
+          const previousObject = { ...prev, data: project };
+          return { ...previousObject, isVisible: true };
+        })
+      }
     >
       <h2>{t("PROJECTS." + project.title)}</h2>
       <div>

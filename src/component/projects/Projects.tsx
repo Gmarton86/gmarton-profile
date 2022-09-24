@@ -27,7 +27,11 @@ const Projects = (props: any) => {
       </div>
       <div className="items-container">
         {projects.map((project) => (
-          <ProjectTile project={project} key={project.id} />
+          <ProjectTile
+            project={project}
+            key={project.id} 
+            setProject={props.setProject}
+          />
         ))}
       </div>
     </div>
