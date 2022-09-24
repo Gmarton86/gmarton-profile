@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Item from "./Item";
+import ProjectTile from "./ProjectTile";
 
 export interface IProjectItem {
   id: number;
@@ -27,7 +27,7 @@ const Projects = (props: any) => {
       </div>
       <div className="items-container">
         {projects.map((project) => (
-          <Item project={project} key={project.id}/>
+          <ProjectTile project={project} key={project.id} />
         ))}
       </div>
     </div>

@@ -6,7 +6,7 @@ interface IItemProps {
   project: IProjectItem;
 }
 
-const Item: React.FC<IItemProps> = ({ project }) => {
+const ProjectTile: React.FC<IItemProps> = ({ project }) => {
   const { t } = useTranslation();
 
   return (
@@ -31,4 +31,4 @@ const Item: React.FC<IItemProps> = ({ project }) => {
   );
 };
 
-export default Item;
+export default ProjectTile;
