@@ -1,3 +1,24 @@
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+@keyframes itemEntrance {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+    filter: hue-rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+  }
+}
+
 .item-container {
   height: 180px;
   display: flex;
@@ -9,12 +30,10 @@
   background-size: cover;
   text-align: center;
   cursor: pointer;
+  animation: itemEntrance 700ms ease-out;
+  animation-fill-mode: backwards;
 }
 
-.grow {
-  transition: all 0.2s ease-in-out;
-}
-
-.grow:hover {
-  transform: scale(1.1);
+@for $i from 1 to 12 {
+  .item-container:nth-child(#{$i}) { animation-delay: $i * 0.25s; }
 }
