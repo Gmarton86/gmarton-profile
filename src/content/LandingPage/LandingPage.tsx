@@ -9,12 +9,17 @@ const LandingPage = () => {
   const { t } = useTranslation();
   const contactRef = useRef(null);
   const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
   return (
     <div>
       <div className="background-space">
         <div className="header-container">
           <div className="header-menu">
-            <HeaderMenu contactRef={contactRef} skillsRef={skillsRef} />
+            <HeaderMenu
+              contactRef={contactRef}
+              skillsRef={skillsRef}
+              projectsRef={projectsRef}
+            />
           </div>
           <div className="header-block">
             <h1 className="header">{t("HEADER")}</h1>
@@ -22,7 +27,7 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      <Projects/>
+      <Projects projectsRef={projectsRef} />
       <Skills skillsRef={skillsRef} />
       <Contact contactRef={contactRef} />
     </div>

@@ -14,12 +14,12 @@ export interface IProjectItem {
   background_image: string;
 }
 
-const Projects = () => {
+const Projects = (props: any) => {
   const { t } = useTranslation();
   const projects: Array<IProjectItem> = require("./../../data/projects.json");
 
   return (
-    <div className="projects-container">
+    <div className="projects-container" ref={props.projectsRef}>
       <div className="projects_header-container">
         <div className="wrapper">
           <h1>{t("PROJECTS_TITLE")}</h1>

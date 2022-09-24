@@ -36,7 +36,13 @@ const HeaderMenu = (props: any) => {
 
   return (
     <div className="container">
-      <Button variant="text" className="header-menu-font">
+      <Button
+        variant="text"
+        className="header-menu-font"
+        onClick={() => {
+          executeScroll(props.projectsRef);
+        }}
+      >
         {t("HEADER_MENU.PROJECTS")}
       </Button>
       <Button
