@@ -13,9 +13,9 @@ const Item: React.FC<IItemProps> = ({ project }) => {
     <div
       className="item-container grow"
       style={{
-        backgroundImage: `url(${
-          process.env.REACT_APP_PUBLIC_URL + project.background_image
-        }`,
+        backgroundImage:
+          "linear-gradient(to bottom, rgba(35,37,38, 0.42), rgba(65,67,69, 0.52))," +
+          `url(${process.env.REACT_APP_PUBLIC_URL + project.background_image}`,
       }}
     >
       <h2>{t("PROJECTS." + project.title)}</h2>
