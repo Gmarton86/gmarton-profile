@@ -64,7 +64,7 @@ const HeaderMenu = (props: any) => {
         {t("HEADER_MENU.CONTACT")}
       </Button>
       <IconButton
-        className="IconButton"
+        className="icon__button"
         aria-label="more"
         id="long-button"
         aria-controls={open ? "long-menu" : undefined}

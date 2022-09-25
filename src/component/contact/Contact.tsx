@@ -13,13 +13,13 @@ const Contact = (props: any) => {
     >
       <section className="contact-container">
         <div className="contact_icons">
-          <IconButton className="IconButton">
+          <IconButton className="icon__button">
             <FacebookRounded />
           </IconButton>
-          <IconButton className="IconButton">
+          <IconButton className="icon__button">
             <Instagram />
           </IconButton>
-          <IconButton className="IconButton">
+          <IconButton className="icon__button">
             <LinkedIn />
           </IconButton>
         </div>

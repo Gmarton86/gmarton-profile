@@ -4,9 +4,10 @@ import { IconButton } from "@mui/material";
 
 const Project = (props: any) => {
   return props.project.isVisible ? (
-    <div>
+    <div className="project__container">
       <div>
         <IconButton
+          className="icon__button"
           aria-label="Backspace"
           id="Backspace-icon"
           onClick={() =>
