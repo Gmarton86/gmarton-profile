@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Contact from "../../component/contact/Contact";
 import HeaderMenu from "../../component/header/HeaderMenu";
@@ -15,6 +15,11 @@ const LandingPage = () => {
     isVisible: false,
     data: undefined,
   });
+
+  useEffect(() => {
+    if (project.isVisible) window.scrollTo(0, 0);
+  }, [project.isVisible]);
+
   return (
     <div>
       <div className="background-space">
