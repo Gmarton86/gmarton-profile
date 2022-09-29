@@ -13,10 +13,17 @@
         "text": "Java"
       }
     ],
-    "images": [],
+    "images": [
+      "pubs/background.png",
+      "pubs/results.png",
+      "pubs/publication.png",
+      "pubs/terms.png",
+      "pubs/about.png",
+      "pubs/faq.png"
+    ],
     "date": "2021-2022",
-    "customer": "",
-    "link": "",
+    "customer": "IBM",
+    "link": "https://www.ibm.com/resources/publications",
     "background_image": "pubs/background.png"
   }
 ]
