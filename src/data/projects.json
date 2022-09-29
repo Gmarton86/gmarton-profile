@@ -6,11 +6,13 @@
     "tags": [
       {
         "id": "pubs-tag-1",
-        "text": "VueJS"
+        "text": "VueJS",
+        "color": "primary"
       },
       {
         "id": "pubs-tag-2",
-        "text": "Java"
+        "text": "Java",
+        "color": "success"
       }
     ],
     "images": [

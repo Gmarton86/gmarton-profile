@@ -7,9 +7,9 @@ const Skills = (props: any) => {
     <section className="skills-container" ref={props.skillsRef}>
       <div className="wrapper">
         <h1>{t("HEADER_MENU.SKILLS")}</h1>
-        <div id="resp-table">
-          <div id="resp-table-body">
-            <div className="resp-table-row">
+        <div className="resp-table">
+          <div className="resp-table-body">
+            <div className="resp-table-row resp-table-row-height">
               <div
                 className="table-body-cell label"
                 style={{ color: "#347FD5" }}
@@ -21,7 +21,7 @@ const Skills = (props: any) => {
                 VueJS, jQuery, React Native
               </div>
             </div>
-            <div className="resp-table-row">
+            <div className="resp-table-row-height resp-table-row">
               <div
                 className="table-body-cell label"
                 style={{ color: "#B9AAA2" }}
@@ -33,7 +33,7 @@ const Skills = (props: any) => {
                 PostgreSQL, SQLite, DB2
               </div>
             </div>
-            <div className="resp-table-row">
+            <div className="resp-table-row resp-table-row-height">
               <div
                 className="table-body-cell label"
                 style={{ color: "#F2545F" }}
