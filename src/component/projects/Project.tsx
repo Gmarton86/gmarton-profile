@@ -95,6 +95,21 @@ const Project = (props: any) => {
                   </div>
                 </div>
               </section>
+              <section>
+                <div className="project__image-container">
+                  {props.project.data.images.map(
+                    (image: any, index: number) => {
+                      return (
+                        <div className="project__image" key={index + image}>
+                          <img
+                            src={process.env.REACT_APP_PUBLIC_URL + image} alt={image}
+                          ></img>
+                        </div>
+                      );
+                    }
+                  )}
+                </div>
+              </section>
             </div>
           </animated.div>
         )
