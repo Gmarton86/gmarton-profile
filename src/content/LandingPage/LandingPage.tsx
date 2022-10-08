@@ -19,7 +19,6 @@ const LandingPage = () => {
   useEffect(() => {
     if (project.isVisible) window.scrollTo(0, 0);
   }, [project.isVisible]);
-
   return (
     <div>
       <div className="background-space">
@@ -33,7 +32,18 @@ const LandingPage = () => {
           </div>
           {!project.isVisible && (
             <div className="header-block">
-              <h1 className="header">{t("HEADER")}</h1>
+              <h1 className="header">
+                <div className="wave">
+                  <span style={{ "--item": 1 } as React.CSSProperties}>Z</span>
+                  <span style={{ "--item": 2 } as React.CSSProperties}>U</span>
+                  <span style={{ "--item": 3 } as React.CSSProperties}>R</span>
+                  <span style={{ "--item": 4 } as React.CSSProperties}>V</span>
+                  <span style={{ "--item": 5 } as React.CSSProperties}>I</span>
+                  <span style={{ "--item": 6 } as React.CSSProperties}>.</span>
+                  <span style={{ "--item": 7 } as React.CSSProperties}>s</span>
+                  <span style={{ "--item": 8 } as React.CSSProperties}>k</span>
+                </div>
+              </h1>
               <h3 className="subheader">{t("SUB_HEADER")}</h3>
             </div>
           )}
