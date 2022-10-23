@@ -25,9 +25,9 @@ const LandingPage = () => {
         <div className="header-container">
           <div className="header-menu">
             <HeaderMenu
-              contactRef={contactRef}
-              skillsRef={skillsRef}
-              projectsRef={projectsRef}
+              // contactRef={contactRef}
+              // skillsRef={skillsRef}
+              // projectsRef={projectsRef}
             />
           </div>
 
