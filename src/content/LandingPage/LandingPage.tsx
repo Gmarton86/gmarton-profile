@@ -51,6 +51,7 @@ const LandingPage = () => {
       </div>
       {!project.isVisible && (
         <div>
+          <hr style={{color: "white", margin: "0px", padding: "0px"}}/>
           <Projects projectsRef={projectsRef} setProject={setProject} />
           <Skills skillsRef={skillsRef} />
           <Contact contactRef={contactRef} />
