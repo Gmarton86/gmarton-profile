@@ -27,5 +27,33 @@
     "customer": "IBM",
     "link": "https://www.ibm.com/resources/publications",
     "background_image": "pubs/background.png"
+  },
+  {
+    "id": "2",
+    "title": "WWWCAM_TITLE",
+    "description": "WWWCAM_DESCRIPTION",
+    "tags": [
+      {
+        "id": "wwwcam-tag-1",
+        "text": "ReactJS",
+        "color": "primary"
+      },
+      {
+        "id": "wwwcam-tag-2",
+        "text": "Java",
+        "color": "success"
+      }
+    ],
+    "images": [
+      "cam/cam-landing-page.png",
+      "cam/cam-profile.png",
+      "cam/cam-translations.png",
+      "cam/cam-add-access.png",
+      "cam/cam-reopen-access.png"
+    ],
+    "date": "2022",
+    "customer": "IBM",
+    "link": "https://www.ibm.com/resources/publications",
+    "background_image": "cam/cam-landing-page.png"
   }
 ]

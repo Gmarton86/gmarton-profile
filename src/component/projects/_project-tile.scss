@@ -1,3 +1,22 @@
+.project-tile__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.project-tile__header-font {
+  color: black;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.project-tile__header:hover {
+  cursor: pointer;
+  color: dodgerblue;
+}
+
 .grow {
   transition: all 0.2s ease-in-out;
 }
@@ -35,5 +54,7 @@
 }
 
 @for $i from 1 to 12 {
-  .item-container:nth-child(#{$i}) { animation-delay: $i * 0.25s; }
+  .item-container:nth-child(#{$i}) {
+    animation-delay: $i * 0.25s;
+  }
 }

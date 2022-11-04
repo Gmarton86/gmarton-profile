@@ -1,17 +1,8 @@
-.projects-container {
-  background-color: #010303;
-  color: white;
-}
-
-.projects_header-container {
-  padding: 32px;
-}
-
 .items-container {
   display: grid;
   grid-template-columns: repeat( auto-fill, minmax(320px,auto) );
   grid-template-rows: repeat( auto-fit, minmax(180px, auto) );
-  column-gap: 10px;
-  row-gap: 10px;
-  padding-bottom: 10px;
+  column-gap: 32px;
+  row-gap: 32px;
+  margin-top: 64px;
 }
