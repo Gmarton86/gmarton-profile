@@ -16,11 +16,9 @@ const ProjectTile: React.FC<IItemProps> = ({ project, setProject }) => {
       <div
         className="item-container grow"
         style={{
-          backgroundImage:
-            "linear-gradient(to bottom, rgba(35,37,38, 0.42), rgba(65,67,69, 0.52))," +
-            `url(${
-              process.env.REACT_APP_PUBLIC_URL + project.background_image
-            }`,
+          backgroundImage: `url(${
+            process.env.REACT_APP_PUBLIC_URL + project.background_image
+          }`,
         }}
         onClick={() =>
           setProject((prev: any) => {
