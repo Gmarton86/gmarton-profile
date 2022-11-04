@@ -49,12 +49,15 @@
   background-size: cover;
   text-align: center;
   cursor: pointer;
+}
+
+.project-tile-animation {
   animation: itemEntrance 700ms ease-out;
   animation-fill-mode: backwards;
 }
 
-@for $i from 1 to 12 {
-  .item-container:nth-child(#{$i}) {
+@for $i from 1 to 3 {
+  .project-tile-animation:nth-child(#{$i}) {
     animation-delay: $i * 0.25s;
   }
 }

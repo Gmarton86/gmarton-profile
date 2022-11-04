@@ -18,7 +18,8 @@
   "PROJECTS_TITLE": "Moje projekty",
   "PROJECTS": {
     "PUBS_TITLE": "IBM Publications Center",
-    "PUBS_DESCRIPTION": "IBM Publications Center poskytuje širokú škálu publikácií IBM, ktoré si môžete bezplatne stiahnuť. Na vyhľadanie publikácií, ktoré vás konkrétne zaujímajú, môžete použiť vyhľadávací nástroj IBM. Upozorňujeme, že publikácie sa na tejto stránke nedajú objednať."
+    "PUBS_DESCRIPTION": "IBM Publications Center poskytuje širokú škálu publikácií IBM, ktoré si môžete bezplatne stiahnuť. Na vyhľadanie publikácií, ktoré vás konkrétne zaujímajú, môžete použiť vyhľadávací nástroj IBM. Upozorňujeme, že publikácie sa na tejto stránke nedajú objednať.",
+    "WWWCAM_TITLE": "Client Access Management"
   },
   "CUSTOMER": "Zakazník",
   "LINK": "Link",

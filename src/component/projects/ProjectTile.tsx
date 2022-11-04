@@ -12,7 +12,7 @@ const ProjectTile: React.FC<IItemProps> = ({ project, setProject }) => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="project-tile-animation">
       <div
         className="item-container grow"
         style={{
