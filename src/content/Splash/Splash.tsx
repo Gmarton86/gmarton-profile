@@ -6,7 +6,7 @@ const Splash = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      navigate("/home");
+      navigate("/projects");
     }, 3000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
