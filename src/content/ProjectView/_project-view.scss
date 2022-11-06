@@ -1,0 +1,14 @@
+.project-view__header-image {
+  min-height: 40vh;
+  min-width: auto;
+  background-size: cover;
+  //   background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-view__body-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin-top: -80px;
+}

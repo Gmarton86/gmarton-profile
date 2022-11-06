@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Outlet, useParams } from "react-router-dom";
+import ProfileBox from "../../component/profileBox/ProfileBox";
 import { IProjectItem } from "../../component/projects/Projects";
+import ProjectBox from "./ProjectBox";
 
 const ProjectView = () => {
   const { projectId } = useParams();
@@ -12,12 +14,27 @@ const ProjectView = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="mt-16">
+    <div>
       <Outlet />
-      <img
-        src={`${process.env.REACT_APP_PUBLIC_URL + project.background_image}`}
-        alt={t(project.title)}
-      />
+      <div
+        className="mt-16 project-view__header-image"
+        style={{
+          backgroundImage: `url(${
+            process.env.REACT_APP_PUBLIC_URL + project.background_image
+          }`,
+        }}
+      ></div>
+
+      <div className="project-view__body-container">
+        <div>
+          {/* BLOCK SITE */}
+          <ProjectBox/>
+        </div>
+        <div>
+          {/* MOJ PROFILE */}
+          <ProfileBox/>
+        </div>
+      </div>
     </div>
   );
 };
