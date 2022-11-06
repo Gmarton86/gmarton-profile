@@ -5,11 +5,13 @@ import MenuItem from "@mui/material/MenuItem";
 import LanguageIcon from "@mui/icons-material/Language";
 import { useTranslation } from "react-i18next";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const HeaderMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const options = [
     { id: "en", label: t("LANGUAGES.EN") },
@@ -32,7 +34,11 @@ const HeaderMenu = () => {
 
   return (
     <div>
-      <Button variant="text" className="header-menu-font">
+      <Button
+        variant="text"
+        className="header-menu-font"
+        onClick={() => navigate("/projects")}
+      >
         {t("HEADER_MENU.PROJECTS")}
       </Button>
       <Button variant="text" className="header-menu-font">
