@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
 import { Outlet, useParams } from "react-router-dom";
 import ProfileBox from "../../component/profileBox/ProfileBox";
 import { IProjectItem } from "../../component/projects/Projects";
@@ -11,7 +10,6 @@ const ProjectView = () => {
   const [project] = useState<any>(
     projects.find((project) => project.id.toString() === projectId?.toString())
   );
-  const { t } = useTranslation();
 
   return (
     <div>
@@ -28,11 +26,11 @@ const ProjectView = () => {
       <div className="project-view__body-container">
         <div>
           {/* BLOCK SITE */}
-          <ProjectBox/>
+          <ProjectBox />
         </div>
         <div>
           {/* MOJ PROFILE */}
-          <ProfileBox/>
+          <ProfileBox />
         </div>
       </div>
     </div>

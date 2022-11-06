@@ -1,6 +1,8 @@
 {
   "HEADER": "ZURVI.sk",
   "SUB_HEADER": "Vitaj na mojej stránke! Ja som Erik Zurvalec. Som softvérový inžinier a vytváram webové aplikácie od roku 2022.",
+  "PROFILE_BOX_HEADER": "O Erikovi Zurvalcovi",
+  "PROFILE_BOX": "Erik Zurvalec je softvérový inžinier. Erik programuje webové aplikácie od roku 2021. Jeho záľuby sú IT inovácie, finančná gramotnosť a šport.",
   "LANGUAGES": {
     "EN": "Anglický",
     "SK": "Slovenský"

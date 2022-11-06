@@ -1,5 +1,23 @@
 .profile-box-container {
-    display: block;
-    padding: 10px;
-    background-color: white;
+  display: block;
+  padding: 30px;
+  background-color: white;
+}
+
+.profile-box-body {
+  padding-top: 30px;
+}
+
+.profile-box__profile-image {
+  height: 120px;
+  width: auto;
+  float: left;
+  padding-right: 10px;
+}
+
+.profile-box-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
 }
