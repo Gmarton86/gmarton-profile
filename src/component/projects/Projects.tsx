@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import ProjectTile from "./ProjectTile";
 
 export interface IProjectItem {
@@ -15,6 +16,7 @@ export interface IProjectItem {
 
 const Projects = (props: any) => {
   const projects: Array<IProjectItem> = require("./../../data/projects.json");
+  const navigate = useNavigate()
 
   return (
     <div className="projects-container" ref={props.projectsRef}>
@@ -22,8 +24,9 @@ const Projects = (props: any) => {
         {projects.map((project) => (
           <ProjectTile
             project={project}
-            key={project.id} 
+            key={project.id}
             setProject={props.setProject}
+            handleClick={() => {navigate(`/projects/${project.id}`);}}
           />
         ))}
       </div>

@@ -6,13 +6,23 @@ import { IProjectItem } from "./Projects";
 interface IItemProps {
   project: IProjectItem;
   setProject: Function;
+  handleClick: Function;
 }
 
-const ProjectTile: React.FC<IItemProps> = ({ project, setProject }) => {
+const ProjectTile: React.FC<IItemProps> = ({
+  project,
+  setProject,
+  handleClick,
+}) => {
   const { t } = useTranslation();
 
   return (
-    <div className="project-tile-animation">
+    <div
+      className="project-tile-animation"
+      onClick={() => {
+        handleClick();
+      }}
+    >
       <div
         className="item-container grow"
         style={{
