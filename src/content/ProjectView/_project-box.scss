@@ -1,5 +1,14 @@
 .project-box-container {
     display: block;
-    padding: 10px;
+    padding: 64px;
     background-color: white;
+}
+
+.project-box__header {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.project-box__body {
+    margin-top: 48px;
 }

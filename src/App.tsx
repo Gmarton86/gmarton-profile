@@ -6,6 +6,7 @@ import Splash from "./content/Splash/Splash";
 import Home from "./content/Home/Home";
 import ProjectView from "./content/ProjectView/ProjectView";
 import Header from "./component/header/Header";
+import Footer from "./component/footer/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         </Route>
         <Route path="/" element={<Splash />}></Route>
       </Routes>
+      <Footer />
     </div>
   );
 };

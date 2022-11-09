@@ -9,6 +9,12 @@
 .project-view__body-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 10px;
+  gap: 30px;
   margin-top: -80px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-view__body-container {
+      grid-template-columns: 1fr;
+  }
 }

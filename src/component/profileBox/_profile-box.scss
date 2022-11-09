@@ -16,8 +16,16 @@
 }
 
 .profile-box-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-box-container {
+    border-top: solid;
+    padding: 64px;
+    margin-top: -32px;
+  }
 }
