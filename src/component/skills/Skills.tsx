@@ -6,7 +6,7 @@ const Skills = (props: any) => {
   return (
     <section className="skills-container" ref={props.skillsRef}>
       <div className="wrapper">
-        <h1>{t("HEADER_MENU.SKILLS")}</h1>
+        <h1>{t("HEADER_MENU.ABOUT")}</h1>
         <div className="resp-table">
           <div className="resp-table-body">
             <div className="resp-table-row resp-table-row-height">

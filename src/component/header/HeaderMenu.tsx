@@ -42,7 +42,7 @@ const HeaderMenu = () => {
         {t("HEADER_MENU.PROJECTS")}
       </Button>
       <Button variant="text" className="header-menu-font">
-        {t("HEADER_MENU.SKILLS")}
+        {t("HEADER_MENU.ABOUT")}
       </Button>
       <Button variant="text" className="header-menu-font">
         {t("HEADER_MENU.CONTACT")}
