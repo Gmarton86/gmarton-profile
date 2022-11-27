@@ -1,0 +1,53 @@
+.about__header {
+  text-align: center;
+  font-size: 64px;
+  line-height: 48px;
+  line-height: 57%;
+  vertical-align: center;
+  letter-spacing: -0.23px;
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+.divider {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.about__body--name-shadow {
+  text-align: center;
+  font-style: italic;
+  font-size: 28px;
+  line-height: 48px;
+  line-height: 130%;
+  vertical-align: top;
+  letter-spacing: -0.23px;
+  color: #a6a6a6;
+}
+
+.about__body--title {
+  text-align: center;
+  font-family: "cursive";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: 0.266667px;
+
+  mix-blend-mode: hard-light;
+}
+
+.about__body--body {
+  /* Body 1 */
+    margin-top: 15px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.5px;
+}

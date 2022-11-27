@@ -41,7 +41,11 @@ const HeaderMenu = () => {
       >
         {t("HEADER_MENU.PROJECTS")}
       </Button>
-      <Button variant="text" className="header-menu-font">
+      <Button
+        variant="text"
+        className="header-menu-font"
+        onClick={() => navigate("/about")}
+      >
         {t("HEADER_MENU.ABOUT")}
       </Button>
       <Button variant="text" className="header-menu-font">
