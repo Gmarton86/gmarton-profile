@@ -48,7 +48,11 @@ const HeaderMenu = () => {
       >
         {t("HEADER_MENU.ABOUT")}
       </Button>
-      <Button variant="text" className="header-menu-font">
+      <Button
+        variant="text"
+        className="header-menu-font"
+        onClick={() => navigate("/contact")}
+      >
         {t("HEADER_MENU.CONTACT")}
       </Button>
       <IconButton

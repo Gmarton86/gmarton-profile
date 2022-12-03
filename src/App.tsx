@@ -8,6 +8,7 @@ import ProjectView from "./content/ProjectView/ProjectView";
 import Header from "./component/header/Header";
 import Footer from "./component/footer/Footer";
 import About from "./content/About/About";
+import Contact from "./content/Contact/Contact";
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
         </Route>
         <Route path="/about" element={<About />}>
           <Route path="/about" element={<Header />}></Route>
+        </Route>
+        <Route path="/contact" element={<Contact />}>
+          <Route path="/contact" element={<Header />}></Route>
         </Route>
         <Route path="/projects/:projectId" element={<ProjectView />}>
           <Route path="/projects/:projectId" element={<Header />}></Route>
