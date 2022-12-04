@@ -21,6 +21,22 @@ header {
   font-family: cursive;
 }
 
+.page__title {
+  text-align: center;
+  font-size: 64px;
+  line-height: 48px;
+  line-height: 57%;
+  vertical-align: center;
+  letter-spacing: -0.23px;
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+.divider {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
 // .background-space {
 //   // background-image: url("./assets/space.gif");
 //   // background-repeat: "no-repeat";

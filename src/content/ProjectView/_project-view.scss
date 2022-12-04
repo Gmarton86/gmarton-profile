@@ -15,8 +15,16 @@
    margin-right: 18px;
 }
 
+.hidden {
+  display: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .project-view__body-container {
       grid-template-columns: 1fr;
+  }
+
+  .hidden {
+      display: block;
   }
 }

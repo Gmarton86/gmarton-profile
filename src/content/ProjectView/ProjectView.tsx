@@ -32,6 +32,7 @@ const ProjectView = () => {
         <div>
           <ProjectBox />
         </div>
+        <hr className="divider hidden" />
         <div>
           <ProfileBox />
         </div>

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <Outlet />
-      <div className="about__header">About</div>
+      <div className="page__title">About</div>
       <div>
         <img
           src={require("./../../assets/backgroundErik.jpg")}
