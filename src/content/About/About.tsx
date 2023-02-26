@@ -1,5 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const About = () => {
   return (
@@ -7,9 +9,11 @@ const About = () => {
       <Outlet />
       <div className="page__title">About</div>
       <div>
-        <img
-          src={require("./../../assets/backgroundErik.jpg")}
-          alt="Erik Zurvalec"
+        <LazyLoadImage
+          src={require("./../../assets/backgroundErik.jpg")} // use normal <img> attributes as props
+          alt={"Erik Zurvalec"}
+          effect="blur"
+          placeholderSrc={require("./../../assets/backgroundErik.jpg")}
         />
       </div>
       <hr className="divider" />
