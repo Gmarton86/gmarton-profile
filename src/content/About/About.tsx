@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Outlet } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 const About = () => {
+  const targetRef = useRef<HTMLDivElement | null>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ["start end", "end start"],
+  });
+
+  const opacity = useTransform(scrollYProgress, [0.8, 1], [1, 0]);
+  const y = useTransform(scrollYProgress, [0.8, 1], ["0vh", "50vh"]);
   return (
     <div>
       <Outlet />
       <div className="page__title">About</div>
-      <div>
+      <motion.div ref={targetRef} style={{ opacity, y }}>
         <LazyLoadImage
           src={require("./../../assets/backgroundErik.jpg")} // use normal <img> attributes as props
           alt={"Erik Zurvalec"}
           effect="blur"
           placeholderSrc={require("./../../assets/backgroundErik.jpg")}
         />
-      </div>
+      </motion.div>
       <hr className="divider" />
       <section>
         <div className="about__body--name-shadow">I am Erik Zurvalec</div>
