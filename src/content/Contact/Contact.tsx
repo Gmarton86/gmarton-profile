@@ -18,7 +18,12 @@ const Contact = () => {
         Contact
       </motion.div>
       <div className="contact__container">
-        <section className="contact__container__left-section">
+        <motion.section
+          initial={{ x: -500 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2 }}
+          className="contact__container__left-section"
+        >
           <form className="contact__form_container">
             <TextField id="name" label="Name" variant="standard" />
             <TextField id="lastname" label="Lastname" variant="standard" />
@@ -34,10 +39,14 @@ const Contact = () => {
               Send
             </Button>
           </form>
-        </section>
-        <section>
+        </motion.section>
+        <motion.section
+          initial={{ x: 500 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2 }}
+        >
           <ProfileBox />
-        </section>
+        </motion.section>
       </div>
     </div>
   );
