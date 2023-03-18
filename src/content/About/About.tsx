@@ -25,7 +25,7 @@ const About = () => {
       >
         About
       </motion.div>
-      <motion.div ref={targetRef} style={{ opacity, y }}>
+      <motion.div ref={targetRef} style={{ opacity, y }} className="about__image">
         <LazyLoadImage
           src={require("./../../assets/backgroundErik.jpg")} // use normal <img> attributes as props
           alt={"Erik Zurvalec"}

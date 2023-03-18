@@ -10,17 +10,17 @@ const ProfileBox = () => {
   return (
     <div className="profile-box-container">
       <header>
-        <div> {t("PROFILE_BOX_HEADER")}</div>
+        <div>{t("PROFILE_BOX_HEADER")}</div>
       </header>
       <section className="profile-box-body">
-          <LazyLoadImage
-            src={require("../../assets/profile.jpg")}
-            className="profile-box__profile-image"
-            alt="profile picture"
-            effect="blur"
-            placeholderSrc={require("../../assets/profile.jpg")}
-          />
-       
+        <LazyLoadImage
+          src={require("../../assets/profile.jpg")}
+          className="profile-box__profile-image"
+          alt="profile picture"
+          effect="blur"
+          placeholderSrc={require("../../assets/profile.jpg")}
+        />
+
         {t("PROFILE_BOX")}
       </section>
       <section className="profile-box-footer">
