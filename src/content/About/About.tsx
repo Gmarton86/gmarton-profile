@@ -17,7 +17,14 @@ const About = () => {
   return (
     <div>
       <Outlet />
-      <div className="page__title">About</div>
+      <motion.div
+        className="page__title"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+      >
+        About
+      </motion.div>
       <motion.div ref={targetRef} style={{ opacity, y }}>
         <LazyLoadImage
           src={require("./../../assets/backgroundErik.jpg")} // use normal <img> attributes as props
