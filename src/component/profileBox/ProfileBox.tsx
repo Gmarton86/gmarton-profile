@@ -24,13 +24,16 @@ const ProfileBox = () => {
         {t("PROFILE_BOX")}
       </section>
       <section className="profile-box-footer">
-        <IconButton>
+        <IconButton color="primary" title="Facebook">
           <FacebookRounded />
         </IconButton>
-        <IconButton>
+        <IconButton
+          color="warning"
+          title="Instagram"
+        >
           <Instagram />
         </IconButton>
-        <IconButton>
+        <IconButton color="primary" title="LinkedIn">
           <LinkedIn />
         </IconButton>
       </section>

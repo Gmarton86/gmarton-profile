@@ -12,7 +12,8 @@
   gap: 30px;
   margin-top: -80px;
   margin-right: 18px;
-   margin-right: 18px;
+  margin-right: 18px;
+  font-family: "roboto";
 }
 
 .hidden {
@@ -21,10 +22,10 @@
 
 @media screen and (max-width: 768px) {
   .project-view__body-container {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .hidden {
-      display: block;
+    display: block;
   }
 }

@@ -15,7 +15,7 @@ const About = () => {
   const opacity = useTransform(scrollYProgress, [0.8, 1], [1, 0]);
   const y = useTransform(scrollYProgress, [0.8, 1], ["0vh", "50vh"]);
   return (
-    <div>
+    <div style={{minHeight: '250vh'}}>
       <Outlet />
       <motion.div
         className="page__title"
