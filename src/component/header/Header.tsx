@@ -5,7 +5,7 @@ import HeaderMenu from "./HeaderMenu";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <header id="header" className="mt-14 text-xl">
+    <header id="header" className="pt-14 text-xl">
       <div className="flex justify-between">
         <header
           className="flex items-center cursor-pointer"

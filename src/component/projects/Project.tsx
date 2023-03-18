@@ -32,7 +32,7 @@ const Project = (props: any) => {
                   id="backspace-icon"
                   onClick={() => {
                     setAnimation(false);
-                    props.setProject((prev: any) => {
+                    props?.setProject((prev: any) => {
                       return { ...prev, isVisible: false };
                     });
                   }}

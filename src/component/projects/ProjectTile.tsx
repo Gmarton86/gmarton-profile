@@ -30,12 +30,13 @@ const ProjectTile: React.FC<IItemProps> = ({
             process.env.REACT_APP_PUBLIC_URL + project.background_image
           }`,
         }}
-        onClick={() =>
-          setProject((prev: any) => {
-            const previousObject = { ...prev, data: project };
-            return { ...previousObject, isVisible: true };
-          })
-        }
+        onClick={() => {
+          if (setProject)
+            setProject((prev: any) => {
+              const previousObject = { ...prev, data: project };
+              return { ...previousObject, isVisible: true };
+            });
+        }}
       ></div>
       <div className="project-tile__header">
         <Button className="flex flex-col" style={{ minWidth: "100%" }}>
