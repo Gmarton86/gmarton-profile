@@ -12,7 +12,7 @@ import Contact from "./content/Contact/Contact";
 
 const App = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto min-h-screen">
       <Routes>
         <Route path="/landing" element={<LandingPage />}></Route>
         <Route path="/projects" element={<Home />}>
