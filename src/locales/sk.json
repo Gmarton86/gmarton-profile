@@ -21,7 +21,9 @@
   "PROJECTS": {
     "PUBS_TITLE": "IBM Publications Center",
     "PUBS_DESCRIPTION": "IBM Publications Center poskytuje širokú škálu publikácií IBM, ktoré si môžete bezplatne stiahnuť. Na vyhľadanie publikácií, ktoré vás konkrétne zaujímajú, môžete použiť vyhľadávací nástroj IBM. Upozorňujeme, že publikácie sa na tejto stránke nedajú objednať.",
-    "WWWCAM_TITLE": "Client Access Management"
+    "WWWCAM_TITLE": "Client Access Management",
+    "BBCISTIAREN_TITLE": "BB čistiareň a práčovňa",
+     "BBCISTIAREN_DESCRIPTION": "V roku 2019 sme otvorili modernú práčovňu a čistiareň v Trstenej, ktorá ponúka špičkovú technológiu čistenia SoftWash. Okrem toho sme tiež vybavili našu práčovňu, práčkami a sušičkami značky Primus, aby sme zabezpečili dokonalú čistotu a kvalitu vášho prádla. V našej čistiarni sme od začiatku kládli dôraz na kvalitu služieb a spokojnosť zákazníkov, a sme hrdí na to, že sme si získali množstvo spokojných zákazníkov. Ak hľadáte spoľahlivú a kvalitnú práčovňu a čistiareň v Trstenej, kontaktujte nás a radi Vám pomôžeme s Vašimi požiadavkami na čistenie a pranie."
   },
   "CUSTOMER": "Zakazník",
   "LINK": "Link",

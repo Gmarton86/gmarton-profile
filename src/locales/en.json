@@ -21,7 +21,9 @@
   "PROJECTS": {
     "PUBS_TITLE": "IBM Publications Center",
     "PUBS_DESCRIPTION": "IBM Publications Center provides a broad range of IBM publications, that can be downloaded free of charge. You can use the IBM search tool to find publications that are of specific interest to you. Please note that publications are not orderable on this site.",
-    "WWWCAM_TITLE": "Client Access Management"
+    "WWWCAM_TITLE": "Client Access Management",
+    "BBCISTIAREN_TITLE": "BB čistiareň a práčovňa",
+    "BBCISTIAREN_DESCRIPTION": "In 2019, we opened a modern laundry and dry-cleaning facility in Trstena, which offers cutting-edge SoftWash cleaning technology. In addition, we have also equipped our laundry, washing machines and dryers with Primus brand to ensure the perfect cleanliness and quality of your laundry. At our dry cleaners, we have emphasized quality service and customer satisfaction from the start, and we are proud to have earned many satisfied customers. If you are looking for a reliable and quality laundry and dry cleaning company in Trstena, contact us and we will be happy to help you with your cleaning and laundry requirements."
   },
   "CUSTOMER": "Customer",
   "LINK": "Link",

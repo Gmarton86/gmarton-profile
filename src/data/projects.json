@@ -55,5 +55,29 @@
     "customer": "IBM",
     "link": "https://www.ibm.com/resources/publications",
     "background_image": "cam/cam-landing-page.png"
+  },
+  
+  {
+    "id": "3",
+    "title": "BBCISTIAREN_TITLE",
+    "description": "BBCISTIAREN_DESCRIPTION",
+    "tags": [
+      {
+        "id": "bbcistiaren-tag-1",
+        "text": "Wordpress",
+        "color": "primary"
+      }
+    ],
+    "images": [
+      "bbcistiaren/landing-page.png",
+      "bbcistiaren/about.jpeg",
+      "bbcistiaren/services.jpeg",
+      "bbcistiaren/prices.jpeg",
+      "bbcistiaren/modal.jpeg"
+    ],
+    "date": "2023",
+    "customer": "BB Cistiaren",
+    "link": "https://www.bbcistiaren.sk",
+    "background_image": "bbcistiaren/landing-page.png"
   }
 ]
