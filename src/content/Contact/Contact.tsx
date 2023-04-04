@@ -3,7 +3,9 @@ import { Button, TextField } from "@mui/material";
 import { motion } from "framer-motion";
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Phone from "../../assets/svg/Phone";
 import ProfileBox from "../../component/profileBox/ProfileBox";
+import ContactBox from "./Contact-box";
 
 const Contact = () => {
   return (
@@ -17,6 +19,9 @@ const Contact = () => {
       >
         Contact
       </motion.div>
+      <section>
+        <ContactBox title="Phone Number" value={<a href="tel:0944 413 624">0944 413 624</a>}><Phone/></ContactBox>
+      </section>
       <div className="contact__container">
         <motion.section
           initial={{ x: -500 }}

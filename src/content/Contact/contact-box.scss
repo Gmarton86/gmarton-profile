@@ -1,0 +1,33 @@
+.contact-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.contact-box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-box-title {
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.contact-box-value {
+  font-family: Roboto;
+  color: #7b7b7b
+}
+
+.contact-box-value:hover {
+    color: black
+}
