@@ -16,6 +16,13 @@
   min-width: 48%;
 }
 
+.contact-icons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .contact__container {
     flex-direction: column;
@@ -23,5 +30,10 @@
 
   .contact__form_container {
     padding-left: 64px;
+  }
+
+  .contact-icons-container {
+    flex-direction: column;
+      gap: 24px;
   }
 }

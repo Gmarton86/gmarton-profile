@@ -3,6 +3,8 @@ import { Button, TextField } from "@mui/material";
 import { motion } from "framer-motion";
 import React from "react";
 import { Outlet } from "react-router-dom";
+import Location from "../../assets/svg/Location";
+import Mail from "../../assets/svg/Mail";
 import Phone from "../../assets/svg/Phone";
 import ProfileBox from "../../component/profileBox/ProfileBox";
 import ContactBox from "./Contact-box";
@@ -19,9 +21,31 @@ const Contact = () => {
       >
         Contact
       </motion.div>
-      <section>
-        <ContactBox title="Phone Number" value={<a href="tel:0944 413 624">0944 413 624</a>}><Phone/></ContactBox>
-      </section>
+
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="contact-icons-container"
+      >
+        <ContactBox title="Location" value={<div>Hladovka 86</div>}>
+          <Location />
+        </ContactBox>
+        <ContactBox
+          title="Phone Number"
+          value={<a href="tel:0944 413 624">0944 413 624</a>}
+        >
+          <Phone />
+        </ContactBox>
+        <ContactBox
+          title="E-mail"
+          value={
+            <a href="mailto:zurvalecerik@gmail.com">zurvalecerik@gmail.com</a>
+          }
+        >
+          <Mail />
+        </ContactBox>
+      </motion.section>
       <div className="contact__container">
         <motion.section
           initial={{ x: -500 }}

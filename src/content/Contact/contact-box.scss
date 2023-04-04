@@ -19,7 +19,6 @@
 }
 
 .contact-box-title {
-  font-weight: bold;
   font-family: cursive;
 }
 
@@ -28,6 +27,6 @@
   color: #7b7b7b
 }
 
-.contact-box-value:hover {
+.contact-box-value:hover a {
     color: black
 }
