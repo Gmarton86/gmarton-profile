@@ -1,5 +1,6 @@
 import * as React from "react";
 import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -34,64 +35,82 @@ const HeaderMenu = () => {
 
   return (
     <div>
-      <Button
-        variant="text"
-        className="header-menu-font"
-        onClick={() => navigate("/projects")}
-      >
-        {t("HEADER_MENU.PROJECTS")}
-      </Button>
-      <Button
-        variant="text"
-        className="header-menu-font"
-        onClick={() => navigate("/about")}
-      >
-        {t("HEADER_MENU.ABOUT")}
-      </Button>
-      <Button
-        variant="text"
-        className="header-menu-font"
-        onClick={() => navigate("/contact")}
-      >
-        {t("HEADER_MENU.CONTACT")}
-      </Button>
-      <IconButton
-        aria-label="more"
-        className="header-menu-font"
-        id="long-button"
-        aria-controls={open ? "long-menu" : undefined}
-        aria-expanded={open ? "true" : undefined}
-        aria-haspopup="true"
-        onClick={handleClick}
-      >
-        <LanguageIcon />
-      </IconButton>
-      <Menu
-        id="long-menu"
-        MenuListProps={{
-          "aria-labelledby": "long-button",
-        }}
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: "20ch",
-          },
-        }}
-      >
-        {options.map((option) => (
-          <MenuItem
-            key={option.id}
-            onClick={() => {
-              changeLanguage(option.id);
-            }}
+      <div className="header-menu-container">
+        <div className="header-navigation">
+          <Button
+            variant="text"
+            className="header-menu-font"
+            onClick={() => navigate("/projects")}
           >
-            {option.label}
-          </MenuItem>
-        ))}
-      </Menu>
+            {t("HEADER_MENU.PROJECTS")}
+          </Button>
+          <Button
+            variant="text"
+            className="header-menu-font"
+            onClick={() => navigate("/about")}
+          >
+            {t("HEADER_MENU.ABOUT")}
+          </Button>
+          <Button
+            variant="text"
+            className="header-menu-font"
+            onClick={() => navigate("/contact")}
+          >
+            {t("HEADER_MENU.CONTACT")}
+          </Button>
+        </div>
+        <IconButton
+          aria-label="more"
+          className="header-menu-font"
+          id="long-button"
+          aria-controls={open ? "long-menu" : undefined}
+          aria-expanded={open ? "true" : undefined}
+          aria-haspopup="true"
+          onClick={handleClick}
+        >
+          <LanguageIcon />
+        </IconButton>
+
+        <Menu
+          id="long-menu"
+          MenuListProps={{
+            "aria-labelledby": "long-button",
+          }}
+          anchorEl={anchorEl}
+          open={open}
+          onClose={handleClose}
+          PaperProps={{
+            style: {
+              maxHeight: ITEM_HEIGHT * 4.5,
+              width: "20ch",
+            },
+          }}
+        >
+          {options.map((option) => (
+            <MenuItem
+              key={option.id}
+              onClick={() => {
+                changeLanguage(option.id);
+              }}
+            >
+              {option.label}
+            </MenuItem>
+          ))}
+        </Menu>
+        <div className="header-mobile-navigation">
+          <IconButton
+            aria-label="mobile navigation"
+            className="header-menu-font"
+            id="mobile-navigation"
+            // aria-controls={open ? "long-menu" : undefined}
+            // aria-expanded={open ? "true" : undefined}
+            // aria-haspopup="true"
+            // onClick={handleClick}
+          >
+            <MenuIcon />
+          </IconButton>
+        </div>
+      </div>
     </div>
   );
 };

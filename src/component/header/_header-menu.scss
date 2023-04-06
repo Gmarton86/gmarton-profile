@@ -1,4 +1,27 @@
+.header-menu-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .header-menu-font {
   font-family: cursive !important;
   color: black !important;
+}
+
+.header-navigation {
+  display: block;
+}
+
+.header-mobile-navigation {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header-navigation {
+    display: none;
+  }
+
+  .header-mobile-navigation {
+    display: block;
+  }
 }
