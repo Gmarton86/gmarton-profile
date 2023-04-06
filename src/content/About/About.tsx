@@ -15,7 +15,7 @@ const About = () => {
   const opacity = useTransform(scrollYProgress, [0.8, 1], [1, 0]);
   const y = useTransform(scrollYProgress, [0.8, 1], ["0vh", "50vh"]);
   return (
-    <div style={{minHeight: '250vh'}}>
+    <div style={{ minHeight: "250vh" }}>
       <Outlet />
       <motion.div
         className="page__title"
@@ -25,7 +25,7 @@ const About = () => {
       >
         About
       </motion.div>
-      <motion.div ref={targetRef} style={{ opacity, y }} className="about__image">
+      <motion.div ref={targetRef} style={{ opacity, y }}>
         <LazyLoadImage
           src={require("./../../assets/backgroundErik.jpg")} // use normal <img> attributes as props
           alt={"Erik Zurvalec"}
