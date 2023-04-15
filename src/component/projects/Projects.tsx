@@ -73,8 +73,10 @@ const Projects = (props: any) => {
     <div className="projects-container" ref={props.projectsRef}>
       <div className="projects-search-container">
         <input
-          style={{ border: "solid" }}
+          className="filter-container"
+          style={{ borderBottom: "solid" }}
           value={filter}
+          placeholder="Search..."
           onChange={(event: React.ChangeEvent<EventTarget>) => {
             const inputElement = event.target as HTMLInputElement;
             const inputValue = inputElement.value;
