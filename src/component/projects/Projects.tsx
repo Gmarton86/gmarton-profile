@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ProjectTile from "./ProjectTile";
 import { styled } from "@mui/material/styles";
@@ -22,12 +22,6 @@ const Projects = (props: any) => {
   const projects: Array<IProjectItem> = require("./../../data/projects.json");
   const navigate = useNavigate();
   const [filter, setFilter] = useState("");
-
-  useEffect(() => {
-    if (document.getElementById("search-input")) {
-      document.getElementById("search-input")?.focus();
-    }
-  }, [filter]);
 
   const SearchIconWrapper = styled("div")(({ theme }) => ({
     padding: theme.spacing(0, 2),
@@ -68,43 +62,37 @@ const Projects = (props: any) => {
     },
   }));
 
-  // console.log(projects);
-
-  const searchInput: any = document.getElementById("search-input");
-
   const filteredProjects = useMemo(() => {
-    // return projects.filter((project) => {
-    //   if (t("PROJECTS." + project.title).startsWith(filter)) return true;
-    //   else return false;
-    // });
-
-    console.log(filter);
-
-    return [];
-  }, [filter]);
+    return projects.filter((project) => {
+      if (t("PROJECTS." + project.title).startsWith(filter)) return true;
+      else return false;
+    });
+  }, [filter, projects]);
 
   return (
     <div className="projects-container" ref={props.projectsRef}>
       <div className="projects-search-container">
+        <input
+          style={{ border: "solid" }}
+          value={filter}
+          onChange={(event: React.ChangeEvent<EventTarget>) => {
+            const inputElement = event.target as HTMLInputElement;
+            const inputValue = inputElement.value;
+            setFilter(inputValue);
+          }}
+        />
         <Search>
           <SearchIconWrapper>
             <SearchIcon />
           </SearchIconWrapper>
           <StyledInputBase
-            onChange={(event: React.ChangeEvent<EventTarget>) => {
-              const inputElement = event.target as HTMLInputElement;
-              const inputValue = inputElement.value;
-              setFilter(inputValue);
-            }}
-            value={filter}
-            id="search-input"
             placeholder="Search…"
             inputProps={{ "aria-label": "search" }}
           />
         </Search>
       </div>
       <div className="items-container">
-        {projects.map((project) => (
+        {filteredProjects.map((project) => (
           <ProjectTile
             project={project}
             key={project.id}
