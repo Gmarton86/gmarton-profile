@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import { t } from "i18next";
+import { Search as SearchIcon2 } from "@mui/icons-material";
 
 export interface IProjectItem {
   id: number;
@@ -72,18 +73,20 @@ const Projects = (props: any) => {
   return (
     <div className="projects-container" ref={props.projectsRef}>
       <div className="projects-search-container">
-        <input
-          className="filter-container"
-          style={{ borderBottom: "solid" }}
-          value={filter}
-          placeholder="Search..."
-          onChange={(event: React.ChangeEvent<EventTarget>) => {
-            const inputElement = event.target as HTMLInputElement;
-            const inputValue = inputElement.value;
-            setFilter(inputValue);
-          }}
-        />
-        <Search>
+        <div className="search-input-container">
+          <SearchIcon2 className="search-icon" />
+          <input
+            className="search-input"
+            value={filter}
+            placeholder="Search..."
+            onChange={(event: React.ChangeEvent<EventTarget>) => {
+              const inputElement = event.target as HTMLInputElement;
+              const inputValue = inputElement.value;
+              setFilter(inputValue);
+            }}
+          />
+        </div>
+        {/* <Search>
           <SearchIconWrapper>
             <SearchIcon />
           </SearchIconWrapper>
@@ -91,7 +94,7 @@ const Projects = (props: any) => {
             placeholder="Search…"
             inputProps={{ "aria-label": "search" }}
           />
-        </Search>
+        </Search> */}
       </div>
       <div className="items-container">
         {filteredProjects.map((project) => (

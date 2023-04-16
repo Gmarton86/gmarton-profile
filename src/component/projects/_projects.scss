@@ -11,15 +11,27 @@
   display: flex;
   justify-content: end;
   padding-top: 32px;
+  padding-bottom: 12px;
 }
 
-input {
-  width: 160px;
-  transition: width 0.5s
+.search-input-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid;
 }
 
-.filter-container:focus {
+.search-icon {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.search-input {
   outline: none;
+  width: 140px;
+  transition: width 0.5s;
+}
+
+.search-input:focus {
   width: 200px;
 }
-
