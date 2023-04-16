@@ -21,9 +21,23 @@ const Projects = (props: any) => {
   const navigate = useNavigate();
   const [filter, setFilter] = useState("");
 
+  const matchFilterInArray = (arr: any, filter: string): Boolean => {
+    return arr.find((item: any) =>
+      item.text.toLowerCase().startsWith(filter.toLowerCase())
+    )
+      ? true
+      : false;
+  };
+
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
-      if (t("PROJECTS." + project.title).startsWith(filter)) return true;
+      if (
+        t("PROJECTS." + project.title)
+          .toLowerCase()
+          .startsWith(filter.toLowerCase())
+      )
+        return true;
+      else if (matchFilterInArray(project.tags, filter)) return true;
       else return false;
     });
   }, [filter, projects]);
