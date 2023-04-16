@@ -24,16 +24,34 @@ const ProfileBox = () => {
         {t("PROFILE_BOX")}
       </section>
       <section className="profile-box-footer">
-        <IconButton color="primary" title="Facebook">
+        <IconButton
+          color="primary"
+          title="Facebook"
+          onClick={() => {
+            window.open("https://www.facebook.com/erik.zurvalec.79", "_blank");
+          }}
+        >
           <FacebookRounded />
         </IconButton>
         <IconButton
           color="warning"
           title="Instagram"
+          onClick={() => {
+            window.open("https://www.instagram.com/erikzurvalec/", "_blank");
+          }}
         >
           <Instagram />
         </IconButton>
-        <IconButton color="primary" title="LinkedIn">
+        <IconButton
+          color="primary"
+          title="LinkedIn"
+          onClick={() => {
+            window.open(
+              "https://www.linkedin.com/in/erik-zurvalec-4983ba214/",
+              "_blank"
+            );
+          }}
+        >
           <LinkedIn />
         </IconButton>
       </section>
