@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { IProjectItem } from "../../component/projects/Projects";
+import {OpenInNew } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
 
 const ProjectBox = () => {
   const { t } = useTranslation();
@@ -14,6 +16,16 @@ const ProjectBox = () => {
     <div className="project-box-container">
       <header className="project-box__header">
         {t(`PROJECTS.` + project?.title)}
+        <IconButton
+          style={{ marginLeft: "8px" }}
+          color="primary"
+          title={t(`PROJECTS.` + project?.title)}
+          onClick={() => {
+            window.open(project?.link, "_blank");
+          }}
+        >
+          <OpenInNew />
+        </IconButton>
       </header>
       <section className="project-box__body">
         {t(`PROJECTS.` + project?.description)}
