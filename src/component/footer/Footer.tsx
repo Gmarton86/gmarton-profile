@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-center mt-5 sticky top-[100vh]  bg-black">
+    <footer className="text-center mt-5 sticky top-[100vh]">
       <span
         className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 "
         style={{ fontFamily: "roboto" }}
