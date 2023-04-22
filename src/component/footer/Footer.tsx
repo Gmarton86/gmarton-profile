@@ -1,9 +1,8 @@
 import React from "react";
 
 const Footer = () => {
-  console.log("hah", window.scrollbars.visible);
   return (
-    <footer className="text-center m-5 sticky top-[100vh]">
+    <footer className="text-center mt-5 sticky top-[100vh]  bg-black">
       <span
         className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 "
         style={{ fontFamily: "roboto" }}
