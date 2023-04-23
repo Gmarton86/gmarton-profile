@@ -1,15 +1,47 @@
 import { Send } from "@mui/icons-material";
 import { Button, TextField } from "@mui/material";
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Location from "../../assets/svg/Location";
 import Mail from "../../assets/svg/Mail";
 import Phone from "../../assets/svg/Phone";
 import ProfileBox from "../../component/profileBox/ProfileBox";
 import ContactBox from "./Contact-box";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+
+   const [toSend, setToSend] = useState({
+     from_name: "",
+     from_lastname: "",
+     message: "",
+     from_email: "",
+   });
+
+   const handleChange = (e: any) => {
+     setToSend({ ...toSend, [e.target.name]: e.target.value });
+   };
+
+    const onSubmit = (e:any) => {
+      e.preventDefault();
+      emailjs
+        .send(
+          `${process.env.REACT_APP_GMAIL_SERVICE_ID}`,
+          `${process.env.REACT_APP_GMAIL_TEMPLATE_ID}`,
+          toSend,
+          `${process.env.REACT_APP_GMAIL_PUBLIC_KEY}`
+        )
+        .then(
+          (response) => {
+            console.log("SUCCESS!", response.status, response.text);
+          },
+          (err) => {
+            console.log("FAILED...", err);
+          }
+        );
+    };
+
   return (
     <div>
       <Outlet />
@@ -53,18 +85,42 @@ const Contact = () => {
           transition={{ duration: 2 }}
           className="contact__container__left-section"
         >
-          <form className="contact__form_container">
-            <TextField id="name" label="Name" variant="standard" />
-            <TextField id="lastname" label="Lastname" variant="standard" />
-            <TextField id="email" label="Email" variant="standard" />
+          <form className="contact__form_container" onSubmit={onSubmit}>
+            <TextField
+              id="name"
+              label="Name"
+              variant="standard"
+              name="from_name"
+              value={toSend.from_name}
+              onChange={handleChange}
+            />
+            <TextField
+              id="lastname"
+              label="Lastname"
+              variant="standard"
+              name="from_lastname"
+              value={toSend.from_lastname}
+              onChange={handleChange}
+            />
+            <TextField
+              id="email"
+              label="Email"
+              name="from_email"
+              variant="standard"
+              value={toSend.from_email}
+              onChange={handleChange}
+            />
             <TextField
               id="message"
               label="Message"
               multiline
               rows={4}
+              name="message"
               variant="standard"
+              value={toSend.message}
+              onChange={handleChange}
             />
-            <Button variant="contained" endIcon={<Send />}>
+            <Button type="submit" variant="contained" endIcon={<Send />}>
               Send
             </Button>
           </form>
